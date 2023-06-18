@@ -1,5 +1,10 @@
 import gpt4all
-gptj = gpt4all.GPT4All("ggml-gpt4all-j-v1.3-groovy")
+
+model="ggml-gpt4all-j-v1.3-groovy"
+gptj = gpt4all.GPT4All(model)
+
+print("\nLocalLLM running " + model + "\n")
+print("Hello I am a locally run chatbot, what can I do for you?")
 
 try:
     while True:
